@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sale</title>
+    <link rel="stylesheet"  type='text/css' href="{% static 'style.css' %}">
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <form action="result">
+        <div class="title">sale</div>
+        <div class="user-details">
+
+            <div class="input-box">
+                <input type="text"  name="year" pattern="[0-9]+" placeholder="ENTER YEAR" required>
+              </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="PREDICT">
+            <h2>{{result2}}</h2>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
